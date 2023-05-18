@@ -9,12 +9,54 @@
 -サンプル
  <label for="name1">名前</label>
 
- #アクション
+#アクション
  -ほとんどの更新処理はpatch
  --putもあったが、railsのアップグレード時に非推奨になった。
- 
- #アプリケーション設定
+
+#アプリケーション設定
  -担当を分けるときは機能ごとに。
  -モデル・データベースをまず作る。
  -テストから作る
   商品が無ければ注文を作れないから。→テストデータを作る。
+
+#コントローラーは複数形、モデルは単数形
+
+#機能ごとにブランチ名を作る
+-developは作業する場所ではない
+
+#developから持ってくる
+-git pull origin develop
+
+#git checkout main
+-移動
+
+#git branch -D ブランチ名
+-削除
+ git checkout -b develop
+-作成
+ git commit --allow-empty -m "" 
+-空のコミット
+
+#developで作業してしまったら
+-commitまでならセーフ
+--git log 
+--commitの横のコミット番号をコピー
+--git reset --hard コミット番号
+
+
+#全員の共通の不具合が起きた時の対処法
+
+1. 作業者が自分のブランチのadd commit
+2. developに移動
+3. 修正用のブランチを作成
+4. 上記のブランチで修正作業、push
+5. プルリクエストでdevelopでmerge
+
+
+1. 全員が自分のブランチのadd commit
+2. developに移動
+3. git pull origin develop
+4. 自分のブランチに戻る
+5. git merge origin/develop
+6. コンフリクトがあれば解消
+

@@ -28,18 +28,18 @@
 -git pull origin develop
 
 #git checkout main
--移動
+-切り替え
 
 #git branch -D ブランチ名
 -削除
  git checkout -b develop
 -作成
- git commit --allow-empty -m "" 
+ git commit --allow-empty -m ""
 -空のコミット
 
 #developで作業してしまったら
 -commitまでならセーフ
---git log 
+--git log
 --commitの横のコミット番号をコピー
 --git reset --hard コミット番号
 
@@ -60,3 +60,12 @@
 5. git merge origin/develop
 6. コンフリクトがあれば解消
 
+# git stash
+-一旦置いていく
+
+#<ul>と<ol>の違い
+-<ul>は、黒ポチの箇条書き
+-<ol>は、番号付きの箇条書き
+
+header
+admin/customers

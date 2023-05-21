@@ -67,5 +67,21 @@
 -<ul>は、黒ポチの箇条書き
 -<ol>は、番号付きの箇条書き
 
+#プルリクした後
+-git checkout develop
+-git pull origin develop
+-git checkout 作業ブランチ
+-git merge origin/develop
+
+#git log
+-今までのコミットの履歴
+
+#git reset --head origin/ブランチ名
+-ローカルのmainを、リモートのmainに強制的に合わせる。（作業していたデータが消えるから注意）
+
+
+#rails g controller admin/~~
 header
 admin/customers
+ admin/orders
+ admin/order_details

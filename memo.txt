@@ -79,6 +79,14 @@
 #git reset --head origin/ブランチ名
 -ローカルのmainを、リモートのmainに強制的に合わせる。（作業していたデータが消えるから注意）
 
+#rails c
+-Customer.all　→登録している人の確認
+-Customer.find(1).valid_password?('~パスワード入力~')　→その人のパスワード参照
+-Customer.find(1).update(password:'~新しいパスワード入力~')　→その人の新しいパスワード入力
+
+#resourse
+-パソコンを使っている人がマイページしか見ないから:idがいらない
+
 
 #rails g controller admin/~~
 header

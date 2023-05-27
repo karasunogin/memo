@@ -87,9 +87,27 @@
 #resourse
 -パソコンを使っている人がマイページしか見ないから:idがいらない
 
+#コミットを取り消す方法
+1.git reset --soft HEAD^ (git reset --hard HEAD^ ←これが)
 
-#rails g controller admin/~~
-header
-admin/customers
- admin/orders
- admin/order_details
+2.git log --oneline
+ コミットのログを一行で表す
+ 
+3.git status
+ 緑の文字が出でいるか
+ 
+ 4.git restore --staged ファイル名
+ 
+ 5.git status
+  赤い文字になっているか
+
+6.git stash
+
+7.git status
+ 何もないか確認
+ 
+8.git stash clear
+ スタッシュしたやつを消す
+ 
+9.git stash 
+ 確認

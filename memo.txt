@@ -116,4 +116,8 @@
  -カキツバタ（杜若）色
     #3e62ad
 -黒紅
-    #3028
+    #302833
+    
+#Rails-pry
+-rails cで使う。通常のirbの強化版がpry。
+-Gemfileに gem 'pry-rails' を追記してbundle install。

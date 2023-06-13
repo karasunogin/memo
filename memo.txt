@@ -83,7 +83,6 @@
 -Customer.all　→登録している人の確認
 -Customer.find(1).valid_password?('~パスワード入力~')　→その人のパスワード参照
 -Customer.find(1).update(password:'~新しいパスワード入力~')　→その人の新しいパスワード入力
-
 #resourse
 -パソコンを使っている人がマイページしか見ないから:idがいらない
 
@@ -92,12 +91,12 @@
 
 2.git log --oneline
  コミットのログを一行で表す
- 
+
 3.git status
  緑の文字が出でいるか
- 
+
  4.git restore --staged ファイル名
- 
+
  5.git status
   赤い文字になっているか
 
@@ -105,19 +104,50 @@
 
 7.git status
  何もないか確認
- 
+
 8.git stash clear
  スタッシュしたやつを消す
- 
-9.git stash 
+
+9.git stash
  確認
- 
+
  #color
  -カキツバタ（杜若）色
     #3e62ad
 -黒紅
     #302833
-    
+
 #Rails-pry
 -rails cで使う。通常のirbの強化版がpry。
 -Gemfileに gem 'pry-rails' を追記してbundle install。
+
+#カラムの追加
+-rails g migration Add カラム名 To テーブル名 カラム名:型名
+ex)
+-rails g migration Add Name To Lists name:string
+-rails db:migrate
+
+#カラムの削除
+-rails g migration Remove カラム名 From テーブル名　カラム名:型名
+ex)
+-rails g migration Remove Name From Lists name:string
+-rails db:migrate
+
+<!--<h1 class="text-center mt-0" style="font-family: 'Sacramento', cursive;">げ～むちゅう</h1>--
+
+
+#byebug
+byebugのコマンドの入れる場所から下のコマンドの動作が止まる
+
+#rails cのコマンド例
+
+review = Review.new
+
+review.customer_id = 1
+review.title = "test"
+review.body = "test"
+s = review.save
+s.errors.messages
+
+s.errors.full_messages
+review.errors.full_messages

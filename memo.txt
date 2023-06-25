@@ -133,8 +133,6 @@ ex)
 -rails g migration Remove Name From Lists name:string
 -rails db:migrate
 
-<!--<h1 class="text-center mt-0" style="font-family: 'Sacramento', cursive;">げ～むちゅう</h1>--
-
 
 #byebug
 byebugのコマンドの入れる場所から下のコマンドの動作が止まる

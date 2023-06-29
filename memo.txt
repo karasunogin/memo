@@ -139,6 +139,7 @@ ex)
 #byebug
 byebugのコマンドの入れる場所から下のコマンドの動作が止まる
 
+
 #rails cのコマンド例
 
 review = Review.new
@@ -152,9 +153,12 @@ s.errors.messages
 s.errors.full_messages
 review.errors.full_messages
 
+
 #model & controller
 -model 単数形
 -controller 複数形
+
+
 
 row w-100 align-items-center justify-content-
 
@@ -234,7 +238,14 @@ row w-100 align-items-center justify-content-
 # current_customer.email === "guest@example.com"
 # current_admin.present?
 
+
 #<table>タグの中に入るタグは決まっている。<tr>/<td>…など
  render先が<div>なっていないか確認する。
 
+
 #floatは小数点もいける型
+
+
+#before_action :authenticate_user!, except: [:show, :index]
+全てのアクションの前に、ユーザーがログインしているかどうか確認する！
+ただし、showアクションと、indexアクションが呼び出された場合は、除くよ。という意味

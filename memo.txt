@@ -249,3 +249,8 @@ row w-100 align-items-center justify-content-
 #before_action :authenticate_user!, except: [:show, :index]
 全てのアクションの前に、ユーザーがログインしているかどうか確認する！
 ただし、showアクションと、indexアクションが呼び出された場合は、除くよ。という意味
+
+
+#references型
+references型は新しく作成するテーブルのカラムに、作成済みのテーブルを指定する場合に使う。
+既存のテーブルを参照するので、reference（参照という意味）と言う。

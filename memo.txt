@@ -256,3 +256,7 @@ references型は新しく作成するテーブルのカラムに、作成済み�
 既存のテーブルを参照するので、reference（参照という意味）と言う。
 中間テーブルに使う？
 ex).各プロジェクトがどのクライアントに属しているかを指定するのが、references型
+
+
+# $ cat /etc/os-release
+Amazon Linux release 2 (Karoo)

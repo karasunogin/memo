@@ -260,5 +260,3 @@ ex).各プロジェクトがどのクライアントに属しているかを指�
 
 # $ cat /etc/os-release
 Amazon Linux release 2 (Karoo)
-
-休憩日

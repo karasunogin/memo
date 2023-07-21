@@ -261,5 +261,4 @@ ex).各プロジェクトがどのクライアントに属しているかを指�
 # $ cat /etc/os-release
 Amazon Linux release 2 (Karoo)
 
-
-面接の内容の直し
+応用課題８

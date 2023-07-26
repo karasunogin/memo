@@ -261,4 +261,4 @@ ex).各プロジェクトがどのクライアントに属しているかを指�
 # $ cat /etc/os-release
 Amazon Linux release 2 (Karoo)
 
-oVice最後やから遊んだ
+DM機能の理解

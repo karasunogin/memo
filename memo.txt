@@ -261,42 +261,5 @@ ex).各プロジェクトがどのクライアントに属しているかを指�
 # $ cat /etc/os-release
 Amazon Linux release 2 (Karoo)
 
-DM機能の理解
 
-user.rb
-  has_many :user_rooms
-  has_many :chats
-  has_many :rooms, through: :user_rooms
-  
-room.rb
-  has_many :user_rooms
-  has_many :chats
-  
-chat.rb 
-  belongs_to :user
-  belongs_to :room
-
-  validates :message, presence: true, length: { maximum: 140 }
-  
-user_room.rb
-  belongs_to :user
-  belongs_to :room
-  
-rootes.rb
-  resources :chats, only: [:show, :create]
-  
-users_controller
-    def show
-    @user = User.find(params[:id])
-    @books = @user.books
-    @book = Book.new
-  end
-  
-view/users/_info
-  <% if current_user != user && current_user.following?(user) && user.following?(current_user) %>
-    <%= link_to 'chatを始める', chat_path(user.id), class: "ml-3" %>
-  <% end %>
-
-chats_controller
-...
-
+git reset --hard c24bd2570e47ee73932078d7e9b6f1ecdf516c6

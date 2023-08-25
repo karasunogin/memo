@@ -265,4 +265,4 @@ Amazon Linux release 2 (Karoo)
 git reset --hard c24bd2570e47ee73932078d7e9b6f1ecdf516c6
 
 
-面接rennshuu
+面接ボールド

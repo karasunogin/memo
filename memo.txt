@@ -264,5 +264,7 @@ Amazon Linux release 2 (Karoo)
 
 git reset --hard c24bd2570e47ee73932078d7e9b6f1ecdf516c6
 
-
-cab+ruby
+#int,float,double型の違い
+-int 整数の値を格納できるもの
+-float （有効桁数の大きくない）小数
+-double （有効桁数の大きい）小数

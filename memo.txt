@@ -268,3 +268,6 @@ git reset --hard c24bd2570e47ee73932078d7e9b6f1ecdf516c6
 -int 整数の値を格納できるもの
 -float （有効桁数の大きくない）小数
 -double （有効桁数の大きい）小数
+
+処理速度を優先的に小数を扱うならばfloat
+精度はdouble

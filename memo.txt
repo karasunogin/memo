@@ -272,5 +272,9 @@ git reset --hard c24bd2570e47ee73932078d7e9b6f1ecdf516c6
 処理速度を優先的に小数を扱うならばfloat
 精度はdouble
 
+#''と""の違い
+''は文字列を表すもの
+""は変数として扱うもの
+言語によっては使い分けないといけない
 
 mennsetsutaisaku
